@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.anim_1).setOnClickListener(this);
         findViewById(R.id.anim_2).setOnClickListener(this);
+        findViewById(R.id.anim_3).setOnClickListener(this);
     }
 
 
@@ -25,10 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.anim_1:
-                new AnimBuilder().jitter1(v);
+                new AnimBuilder().setToY(5).jitter1(v);
                 break;
             case R.id.anim_2:
-                new AnimBuilder().jitter2(v);
+                new AnimBuilder().setToY(5).setDuration(300).jitter2(v);
+                break;
+            case R.id.anim_3:
+                new AnimBuilder().scale(v);
                 break;
         }
     }
