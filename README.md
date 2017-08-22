@@ -7,4 +7,5 @@ new AnimBuilder().jitter1(v); //抖动动画，没有输入内容，或输入错
 new AnimBuilder().jitter2(v); //抖动动画，
 ```
 
-#### 截图
+#### 截图  
+![image](https://github.com/xuanu/InteractionAnim/raw/master/screenshots/1.gif) ;
